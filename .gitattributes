@@ -1,0 +1,14 @@
+# Normaliza el texto a LF en el repositorio y en el checkout.
+* text=auto eol=lf
+
+*.py text eol=lf
+*.md text eol=lf
+*.xml text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Las fixtures golden se comparan byte a byte y usan CRLF: Git no debe
+# convertirlas al hacer checkout en Linux/macOS.
+tests/fixtures/** -text -eol

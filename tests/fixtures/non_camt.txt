@@ -1,0 +1,2 @@
+Este archivo no es XML ni CAMT.
+Es una captura de texto de prueba para verificar que el CLI lo omite con WARN.

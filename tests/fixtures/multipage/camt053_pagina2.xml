@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08">
+  <BkToCstmrStmt>
+    <GrpHdr>
+      <MsgId>PAGE-2</MsgId>
+      <CreDtTm>2026-09-15T10:00:00</CreDtTm>
+    </GrpHdr>
+    <Stmt>
+      <Id>260915010268002</Id>
+      <ElctrncSeqNb>2</ElctrncSeqNb>
+      <LglSeqNb>01649</LglSeqNb>
+      <StmtPgntn>
+        <PgNb>00002</PgNb>
+        <LastPgInd>false</LastPgInd>
+      </StmtPgntn>
+      <Acct>
+        <Id><Othr><Id>H01-234-567890</Id></Othr></Id>
+        <Ccy>MXN</Ccy>
+      </Acct>
+      <Bal>
+        <Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp>
+        <Amt Ccy="MXN">1000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt><Dt>2026-09-15</Dt></Dt>
+      </Bal>
+      <Bal>
+        <Tp><CdOrPrtry><Cd>ITBD</Cd></CdOrPrtry></Tp>
+        <Amt Ccy="MXN">1100.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt><Dt>2026-09-15</Dt></Dt>
+      </Bal>
+      <Ntry>
+        <Amt Ccy="MXN">100.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <RvslInd>false</RvslInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-15</Dt></BookgDt>
+        <ValDt><Dt>2026-09-15</Dt></ValDt>
+        <AcctSvcrRef>NONE</AcctSvcrRef>
+        <BkTxCd><Prtry><Cd>NMSC</Cd><Issr>DEMO</Issr></Prtry></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>NONE</AcctSvcrRef><InstrId>NONE</InstrId></Refs>
+            <AddtlTxInf>PAGE 2 ENTRY</AddtlTxInf>
+          </TxDtls>
+        </NtryDtls>
+        <AddtlNtryInf>PAGE 2 PRINCIPAL MXN100.00</AddtlNtryInf>
+      </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>
